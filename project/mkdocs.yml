@@ -40,7 +40,10 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/openSUSE
       name: openSUSE GitHub
-      
+
+extra_css:
+    - css/extra.css
+
 markdown_extensions:
     - admonition
     - def_list

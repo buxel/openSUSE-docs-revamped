@@ -168,3 +168,17 @@ You can install both with:
 $ sudo transactional-update pkg install tlp ModemManager
 $ sudo reboot
 ```
+
+
+## Known Issues
+- hyper-v needs package "xf86-video-fbdev" for graphical session
+- uid/guid needs to be set for toolbox to work
+```
+echo "<yourusername>:100000:65536" > /etc/subuid 
+echo "<yourusername>:100000:65536" > /etc/subgid
+```
+- graphical applications in the toolbox require fonts/icons
+```
+sudo zypper install xorg-x11-fonts-core adwaita-icon-theme
+```
+
